@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LoginContentView" customModule="Coordinator" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="bn2-Dr-cty">
+                    <rect key="frame" x="70" y="160" width="180" height="95"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t91-77-POt">
+                            <rect key="frame" x="0.0" y="0.0" width="180" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UVQ-38-nfv">
+                            <rect key="frame" x="0.0" y="61" width="180" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bTN-sm-24f">
+                    <rect key="frame" x="122" y="315" width="76" height="92"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFM-QT-gqE">
+                            <rect key="frame" x="0.0" y="0.0" width="76" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <state key="normal" title="Login">
+                                <color key="titleColor" systemColor="systemGreenColor"/>
+                            </state>
+                            <connections>
+                                <action selector="loginButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="wG8-py-Eg8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpl-do-WiB">
+                            <rect key="frame" x="0.0" y="56" width="76" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                            <state key="normal" title="Sign Up"/>
+                            <connections>
+                                <action selector="signUpButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="QFs-id-6lI"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="bn2-Dr-cty" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="160" id="0gK-A0-4Oq"/>
+                <constraint firstItem="bTN-sm-24f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2qZ-f3-KKg"/>
+                <constraint firstItem="bTN-sm-24f" firstAttribute="top" secondItem="bn2-Dr-cty" secondAttribute="bottom" constant="60" id="Gwb-X6-okc"/>
+                <constraint firstItem="bn2-Dr-cty" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="70" id="Ng6-qj-C2I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bn2-Dr-cty" secondAttribute="trailing" constant="70" id="aD1-IK-z4Q"/>
+            </constraints>
+            <point key="canvasLocation" x="138.75" y="95.070422535211264"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
